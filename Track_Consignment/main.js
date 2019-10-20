@@ -117,9 +117,11 @@
 
     function Main()
     {
+        var captchaConf;
+        
         SetConsignmentNumber();
 
-        var captchaConf = GetCaptcha();
+        captchaConf = GetCaptcha();
 
         SolveCaptcha( captchaConf[0], captchaConf[1] );
 
